@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header hidden">
       <div class="container header-container">
         <nav class="header-nav">
           <a class="main-logo header-logo" href="./index.html"
@@ -46,12 +46,79 @@
             </li>
           </ul>
         </address>
+
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="/images/icons.svg#icon-heroicons-solid_menu" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu is-open">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close">
+            <svg class="close-modal-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <a href="#" class="active">Studio</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contacts</a>
+          </nav>
+          <address class="mobile-contacts">
+            <ul class="address-list-mobile">
+              <li class="address-item-mobile">
+                <a href="tel:+110001111111" class="address-link-mobile">
+                  +11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="address-item-mobile">
+                <a href="mailto:info@devstudio.com" class="address-email-mobile"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div>
+            <ul class="socials-list-mobile">
+              <li class="socials-item-mobile">
+                <a href="#" target="_blank" class="socials-link-mobile">
+                  <svg class="socials-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-item-mobile">
+                <a href="#" target="_blank" class="socials-link-mobile">
+                  <svg class="socials-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-item-mobile">
+                <a href="#" target="_blank" class="socials-link-mobile">
+                  <svg class="socials-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-item-mobile">
+                <a href="#" target="_blank" class="socials-link-mobile">
+                  <svg class="socials-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
     <main>
       <!-- #region Hero page -->
-      <section class="section section-hero">
+      <section class="section section-hero hidden">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-button" type="button">Order Service</button>
@@ -59,7 +126,7 @@
       </section>
       <!-- #endregion Hero page -->
       <!-- #region Features -->
-      <section class="section section-feature">
+      <section class="section section-feature hidden">
         <div class="container features-container">
           <h2 class="section-title visually-hidden">Feature</h2>
           <ul class="features-list">
@@ -69,8 +136,8 @@
                   <use href="./images/icons.svg#icon-diagram-1"></use>
                 </svg>
               </div>
-              <h3 class="section-list-title">Strategy</h3>
-              <p class="section-list-text">
+              <h3 class="features-list-title">Strategy</h3>
+              <p class="features-list-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
@@ -81,8 +148,8 @@
                   <use href="./images/icons.svg#icon-clock-1"></use>
                 </svg>
               </div>
-              <h3 class="section-list-title">Punctuality</h3>
-              <p class="section-list-text">
+              <h3 class="features-list-title">Punctuality</h3>
+              <p class="features-list-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
@@ -93,8 +160,8 @@
                   <use href="./images/icons.svg#icon-diagram-1"></use>
                 </svg>
               </div>
-              <h3 class="section-list-title">Diligence</h3>
-              <p class="section-list-text">
+              <h3 class="features-list-title">Diligence</h3>
+              <p class="features-list-text">
                 Research and confirm brands with the strongest digital growth
                 opportunities and minimize risk.
               </p>
@@ -105,8 +172,8 @@
                   <use href="./images/icons.svg#icon-astronaut-1"></use>
                 </svg>
               </div>
-              <h3 class="section-list-title">Technologies</h3>
-              <p class="section-list-text">
+              <h3 class="features-list-title">Technologies</h3>
+              <p class="features-list-text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -116,8 +183,8 @@
       </section>
       <!-- #endregion Features -->
       <!-- #region Team -->
-      <section class="section section-team">
-        <div class="container">
+      <section class="section section-team hidden">
+        <div class="container team-container">
           <h2 class="section-title">Our Team</h2>
           <ul class="team-list">
             <li class="section-list-item">
@@ -128,8 +195,8 @@
                 height="260"
               />
               <div class="team-text">
-                <h3 class="section-list-title">Mark Guerrero</h3>
-                <p class="section-list-text">Product Designer</p>
+                <h3 class="team-list-title">Mark Guerrero</h3>
+                <p class="team-list-text">Product Designer</p>
 
                 <ul class="socials-list">
                   <li class="socials-list-item">
@@ -171,8 +238,8 @@
                 height="260"
               />
               <div class="team-text">
-                <h3 class="section-list-title">Tom Ford</h3>
-                <p class="section-list-text">Frontend Developer</p>
+                <h3 class="team-list-title">Tom Ford</h3>
+                <p class="team-list-text">Frontend Developer</p>
                 <ul class="socials-list">
                   <li class="socials-list-item">
                     <a href="#" target="_blank" class="socials-link">
@@ -213,8 +280,8 @@
                 height="260"
               />
               <div class="team-text">
-                <h3 class="section-list-title">Camila Garcia</h3>
-                <p class="section-list-text">Marketing</p>
+                <h3 class="team-list-title">Camila Garcia</h3>
+                <p class="team-list-text">Marketing</p>
                 <ul class="socials-list">
                   <li class="socials-list-item">
                     <a href="#" target="_blank" class="socials-link">
@@ -255,8 +322,8 @@
                 height="260"
               />
               <div class="team-text">
-                <h3 class="section-list-title">Daniel Wilson</h3>
-                <p class="section-list-text">UI Designer</p>
+                <h3 class="team-list-title">Daniel Wilson</h3>
+                <p class="team-list-text">UI Designer</p>
                 <ul class="socials-list">
                   <li class="socials-list-item">
                     <a href="#" target="_blank" class="socials-link">
@@ -294,7 +361,7 @@
       </section>
       <!-- #endregion Team -->
       <!-- #region Portfolio -->
-      <section class="section section-portfolio">
+      <section class="section section-portfolio hidden">
         <div class="container">
           <h2 class="section-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -417,7 +484,7 @@
       </section>
       <!-- #endregion Portfolio -->
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer hidden">
       <div class="container footer-container">
         <div class="footer-logo-wrapper">
           <a class="main-logo" href="./index.html"
@@ -428,7 +495,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
-        <div>
+        <div class="social">
           <p class="footer-socials-text">Social media</p>
           <ul class="footer-socials-list">
             <li class="socials-list-item">
